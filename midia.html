@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+      <title>Trabalhando com Midias</title>
+</head>
+<body>
+    <h1>Inserindo audio e vídeo</h1>
+    <p>Para inserir uma musica MP3 em sua página web, o arquivo precisa estar em uma pasta junto com a raiz do site. Como é o caso da pasta midia.</p>
+    <audio controls>
+        <source src="midia/metalica_nothing.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <br>
+    <section>
+        <p>Veja o vídeo a seguir:</p>
+        <video controls>
+            <source src="midia/london.mp4" type="video/mp4">
+        </video>
+        <br>
+        <br>
+        <video controls>
+            <source src="midia/pink-floyd.mp4" type="video/mp4">
+            <track kind="subtitles" srclang="pt-br" src="midia/legenda-ptbr.vtt" label="Português Brasil" default>
+
+            <track kind="subtitles" srclang="en" src="midia/legenda-en.vtt" label="Inglês" >
+        </video>
+    </section>
+    <section>
+        <p>Existe outra forma de inserir o video, sem ter o arqquivo. Por meio do site do <b>Youtube</b></p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Bl1FOKpFY2Q?si=m7KRkaXUDxetz3rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<br>
+<p>Como incorporar mapas do google maps:</p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1229200301646!2d-46.69433512459135!3d-23.5280809603705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1764361470719!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</body>
+</html>
