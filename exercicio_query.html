@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício – Media Queries (Modelo)</title>
+    <style>
+        /* =============================
+       MOBILE FIRST (base)
+       ============================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            color: #222;
+            ;
+            background: #cccbcb;
+            line-height: 1.5;
+        }
+
+        header {
+            padding: 16px;
+            background: #7b5cff;
+            color: white;
+            text-align: center;
+        }
+
+        /* fonte responsiva (rem) */
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        /* NAV – mobile: menu vertical empilhado */
+        nav {
+            background: white;
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 8px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            /* gap -> trabalha os espaçamentos entre os elementos */
+        }
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: #222;
+            background: #8383e6;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid #e9e9ee;
+        }
+
+        .menu a:hover {
+            background: #d6f336;
+            color: #2f2b2b;
+        }
+
+        main {
+            padding: 16px;
+            max-width: 1100px;
+            /* para não ficar muito largo no desktop, limitamos ele. */
+            margin: 0 auto;
+        }
+
+        .grid {
+            /* grid-> outro modelo de alinhamento */
+            display: grid; 
+            grid-template-columns: 1fr;
+            /* mobile: uma coluna */
+            gap: 16px;
+        }
+
+        section {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        footer {
+            margin-top: 24px;
+            padding: 16px;
+            text-align: center;
+            color: #666;
+        }
+
+        /* =============================
+       BREAKPOINT 1 – >= 480px (pequenos tablets/maiores celulares)
+       ============================= */
+        @media (min-width: 480px) {
+            body {
+                background: #757576;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .menu {
+                flex-direction: row;
+                overflow-x: auto;
+                gap: 10px;
+                padding: 10px 12px;
+            }
+
+            .menu a {
+                white-space: nowrap;
+            }
+        }
+
+        /* =============================
+       BREAKPOINT 2 – >= 700px (tablet)
+       ============================= */
+        @media (min-width: 700px) {
+            body {
+                background: #2f2b2b;
+            }
+
+            .menu {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr 1fr;
+                /* duas colunas */
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+
+        /* =============================
+       BREAKPOINT 3 – >= 1100px (desktop)
+       ============================= */
+        @media (min-width: 1100px) {
+            body {
+                background: #20212c;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+            }
+
+            .menu {
+                max-width: 1100px;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                /* três colunas quando couber */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exercício – Media Queries</h1>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#secao1">Seção 1</a></li>
+            <li><a href="#secao2">Seção 2</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="grid">
+            <section id="inicio">
+                <h2>Introdução</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis optio perspiciatis fugit
+                    inventore dolore praesentium illo, autem vitae dicta sint pariatur blanditiis adipisci in voluptate
+                    aliquid? Ratione ea voluptatem repudiandae.
+                </p>
+                <p><img src="img/frutas-vermelhas.png" alt="Frutas vermelhas"></p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                </ul>
+            </section>
+
+            <section id="secao1">
+                <h2>Seção 1</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi debitis deserunt fuga eveniet vel
+                    aut ducimus iusto rerum laboriosam esse quo dolorem, nostrum maiores quis velit dignissimos omnis
+                    optio perspiciatis.
+                </p>
+                <p><img src="img/adultos.jpg" alt="Frutas vermelhas"></p>
+                <p><img src="img/crianca.png" alt="Frutas vermelhas"></p>
+            </section>
+
+            <section id="secao2">
+                <h2>Seção 2</h2>
+                <p><img src="img/carro-antigo.webp" alt="Frutas vermelhas"></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsum, dignissimos aperiam nihil
+                    impedit natus laborum iste atque cum rem vel velit autem reprehenderit? Soluta ut fugit tempore
+                    alias quaerat.
+                </p>
+                <p><img src="img/carroNovo.jpg" alt="Frutas vermelhas"></p>
+            </section>
+        </div>
+
+        <footer>
+            <small>
+                © 2026 – Informática para internet
+            </small>
+        </footer>
+    </main>
+</body>
+
+</html>
