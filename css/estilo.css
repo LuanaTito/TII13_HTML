@@ -1,0 +1,75 @@
+/* customiszação do pseudo-classe */
+
+h1{
+    color: red;
+}
+p{
+    color: blue;
+}
+
+a {
+    background-color: #0b2555;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: solid crimson 2px;
+    width: 30px;
+}
+/* Comportamento de link a ser clicado */
+a:link{
+    color: #6cff00;
+}
+/* comportamento de link depois de ser clicado */
+a:visited{
+    color: #000;
+    background-color: yellow;
+}
+/* comportamento de passar o mouse sobre */
+a:hover{
+    background-color: chartreuse;
+    color: blue;
+}
+/* comportamento de ativação */
+a:active{
+    background-color: #fc0e0e;
+    color: black;
+}
+button:link{
+    color: #6cff00;
+}
+button:visited{
+    color: #000;
+    background-color: yellow;
+}
+button:hover{
+    background-color: aquamarine;
+    color: #0b2555;
+}
+/* Trabalhando com Pseudo-elemento */
+
+p::first-line{
+    color: #fc0e0e;
+    font-variant: small-caps;
+}
+p::first-letter{
+    color: darkmagenta;
+    font-size: xx-large;
+}
+/* antes do elemento */
+h3::before{
+    content: url(../img/lupa.webp);
+}
+/* depois do elemento */
+h3::after{
+    content: url(../img/lupa.webp);
+}
+/* especifico para listas (bulets ou marcadores) */
+::marker{
+    color: #6cff00;
+}
+/* modifica o que o usuário seleciona */
+::selection{
+    color: darkorange;
+    background-color: #000;
+}

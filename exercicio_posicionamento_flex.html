@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    ul>li {
+      background-color: rgba(102, 102, 102, 0.7);
+      margin: 5px;
+      padding: 20px;
+      list-style: none;
+      border-radius: 5%;
+      color: white;
+    }
+
+    li:hover {
+      background-color: #f1680d;
+    }
+
+    li.active {
+      background-color: rgb(81, 81, 81);
+      color: white;
+    }
+
+    .row_cards {
+      margin: 10px 0;
+    }
+
+    img {
+      max-height: 200px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .row_cards {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+
+    .content {
+      background-color: white;
+      padding: 10px;
+      /*  */
+      display: inline-block; 
+      width: 300px;
+      height: 380px;
+      margin: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Modelo de página</h1>
+  <hr>
+  <h2>Página de teste</h2>
+  <p>
+  <ul>
+    <li class="active">Carros</li>
+    <li>Pessoas</li>
+    <li>Frutas</li>
+  </ul>
+  </p>
+  <div class="row_cards">
+    <div class="cadsCarro">
+      <div class="content">
+        <img src="img/carro-antigo.webp" alt="Carro Antigo">
+        <h4>Carros antigos</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+    <div class="cadsCarro">
+      <div class="content">
+        <img src="img/carroNovo.jpg" alt="Carro novo">
+        <h4>Carro novo</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+    <div class="cadsCarro">
+      <div class="content">
+        <img src="img/populares.jpg" alt="Carros populares">
+        <h4>Carros populares</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+
+    <div class="cadsFrutas">
+      <div class="content">
+        <img src="img/citricas.png" alt="Frutas Cítricas">
+        <h4>Frutas Cítricas</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+    <div class="cadsFrutas">
+      <div class="content">
+        <img src="img/frutas-vermelhas.png" alt="Frutas vermelhas">
+        <h4>Frutas vermelhas</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+    <div class="cadsFrutas">
+      <div class="content">
+        <img src="img/verdes.jpg" alt="Frutas Verdes">
+        <h4>Frutas Verdes</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+
+    <div class="cadsPessoas">
+      <div class="content">
+        <img src="img/adultos.jpg" alt="Adultos">
+        <h4>Adultos</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+    <div class="cadsPessoas">
+      <div class="content">
+        <img src="img/crianca.png" alt="Crianças">
+        <h4>Crianças</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+    <div class="cadsPessoas">
+      <div class="content">
+        <img src="img/idosos.webp" alt="Idosos">
+        <h4>Idosos</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam a reiciendis ex nobis quidem
+          asperiores.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
