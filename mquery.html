@@ -5,7 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@media</title>
+<style>
+/* Mobile First */
 
+body{
+    background-color: burlywood;
+    width: 100%;
+    max-width: 1000px;
+}
+.tudo{
+    background-color: black;
+    color: white;
+    width: 500px;
+}
+.menuitem{
+    background-color: white;
+    color: black;
+}
+li::marker{}
+
+ li{
+        margin: 10px;
+    }
+
+@media screen and (min-width:330px){
+    
+    body{
+        background-color: chocolate;
+    }
+.tudo{
+    width: 300px;
+}
+}
+
+@media screen and (min-width:768px){
+    body{
+        background-color: darkolivegreen;
+    }
+    #menulist{
+        display: flex;
+        margin: 10px;
+
+    }
+    .tudo{
+        width: 100%;
+        padding: 10px;
+    }
+    
+   
+}
+@media screen and (min-width:1024px){
+    body{
+        background-color: darkslateblue;
+        width: 900px;
+    }
+}
+
+</style>
 </head>
 
 <body>
