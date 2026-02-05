@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mova-se [Página principal]</title>
+    <title>Mova-se [Contato]</title>
     <meta name="descrition"
         content="O Mova-se é um site educacional, com a proposta de fazer reservas e pacotes de viagens com esportes radicais.">
     <!-- css -->
@@ -36,8 +36,59 @@
             </nav>
         </div>
     </header>
-     <main class="conteudo">
-     
+    <main class="conteudo">
+        <div class="conteudo-info" id="conteudo-contato">
+            <article class="cont-contato">
+                <div class="formulario">
+                    <h2 class="titulo">Contato</h2>
+                    <p>Preencha os campos abaixo para entrar em contato.</p>
+                    <form action="" id="form-contato" method="post">
+                        <p>
+                            <label for="nome">Nome:</label>
+                            <input tabindex="5" required type="text" id="nome" name="nome">
+                        </p>
+                        <p>
+                            <label for="email">E-mail:</label>
+                            <input tabindex="6" required type="email" id="email" name="email">
+                        </p>
+                        <p>
+                            <label for="celular">Celular:</label>
+                            <input tabindex="7" required type="tel" id="celular" name="celular">
+                        </p>
+                        <p>
+                            <label for="assunto">Assunto:</label>
+                            <input tabindex="8" required type="text" id="assunto" name="assunto">
+                        </p>
+                        <p>
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea tabindex="9" required id="mensagem" name="mensagem" cols="30" rows="6"></textarea>
+                        </p>
+                        <p>
+                            <button tabindex="10" id="limpar" type="reset" name="limpar">Limpar Campos</button>
+                            <button tabindex="11" id="enviar" type="submit" name="enviar">Enviar dados</button>
+                        </p>
+                    </form>
+                </div>
+            </article>
+            <article class="cont-contato" id="localizacao-end">
+                <div class="localizacao">
+                    <h2 class="titulo">Localização</h2>
+                    <p>Rua tito, 54 - Vila Romana <br> CEP: 05051-000 - São Paulo
+                        <br>Telefone: (11) 2888-5500
+                        <br>e-maill: lapatito@sp.senac.br</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.122920030118!2d-46.694335123789365!3d-23.528080960372165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1770321807027!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
     </main>
     <footer class="rodape">
         <div class="rodape-conteudo">
@@ -86,7 +137,8 @@
             </div>
         </div>
         <div class="assinatura">
-            <p>Desenvolvido por <strong>SEU NOME</strong> Site acadêmico | Todos os direitos reservados | SENAC LAPA TITO &copy; 2026</p>
+            <p>Desenvolvido por <strong>SEU NOME</strong> Site acadêmico | Todos os direitos reservados | SENAC LAPA
+                TITO &copy; 2026</p>
 
         </div>
 
