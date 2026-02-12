@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Criando regras para mobile Frist */
+/* Regras gerais do site */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(../img/hypnotize.png);
+    background-attachment: fixed;
+    width:100%;
+}
+img{
+    width: 100%;
+}
+#topo{
+    background-color: rgba(24,56,29,0.9);
+    border-bottom: solid 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+h1 img{
+    margin-top: 25px;
+    width: 200px;
+}
+nav {
+    min-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold ;
+    line-height: 40px;
+    padding-left: 1%;
+   
+}
+nav a:link, nav a:visited, #iconMenu:link, #iconMenu:visited{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+    min-height: inherit;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:focus, nav a:hover, #iconMenu:focus, #iconMenu:hover{
+    background-color: #A98E12;
+    color: #000;
+    transition: background-color 1s;
+    border-radius: 5%;
+}
+#iconMenu{
+    color: white;
+    cursor: pointer;
+    min-height: 40px;
+    line-height: 40px;
+    padding-left: 1%;
+    font-size: 40px;
+}
+
+/* Footer/ Rodapé  */
+
+.rodape{
+    border-top: solid 5px #06632E;
+    background-color: #000;
+    color: #7F7F80;
+    text-align: center;
+    width: 100%;
+}
+
+.rodape p, li{
+    font-size: 16px;
+}
+.rodape img{
+    margin: 0 5px;
+}
+.rodape-conteudo{
+    padding: 15px;
+    color: #fff;
+}
+.rodape-conteudo li{
+    list-style: none;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+#logo-rodape{
+    min-width: 146px;
+    width: 150px;
+    margin: 0 auto;
+}
+.menu-rodape a{
+    text-decoration: none;
+    color: #7F7F80;
+}
+.menu-rodape a:hover{
+    color: #fff;
+}
+.redes img{
+min-width: 35px;
+width: 35px;
+}
+.assinatura{
+    color: #fff;
+    background-color: #7F7F80;
+    text-align: center;
+    height: auto;
+    padding: 1%;
+}
+.assinatura p{
+    margin-top: 3%;
+}
