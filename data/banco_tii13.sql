@@ -1,0 +1,1 @@
+SELECT * FROM tii13.aluno;

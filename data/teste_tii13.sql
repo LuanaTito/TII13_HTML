@@ -1,0 +1,1 @@
+SELECT * FROM teste_tii13.endereco;
