@@ -1,0 +1,100 @@
++------------------+
+|     Cliente      |
++------------------+
+| - idCliente      |
+| - nome           |
+| - telefone       |
+| - email          |
++------------------+
+| +realizarPedido()|
++------------------+
+          |
+          | 1
+          |
+          | *
++------------------+
+|     Pedido       |
++------------------+
+| - idPedido       |
+| - dataHora       |
+| - valorTotal     |
+| - status         |
++------------------+
+| +calcularTotal() |
+| +cancelar()      |
++------------------+
+     |     |      |
+     |     |1     |1
+     |     |      |
+    *|     |      |1
+     |     |      |
++------------+  +-----------+
+|ItemPedido  |  |Pagamento  |
++------------+  +-----------+
+| quantidade |  | idPagamento|
+| valorUnit. |  | tipo       |
++------------+  | valor      |
+                | status     |
+                +-----------+
+
+     *
+     |
+     |1
++------------------+
+|     Produto      |
++------------------+
+| - idProduto      |
+| - nome           |
+| - descricao      |
+| - preco          |
++------------------+
+
++------------------+
+|   Restaurante    |
++------------------+
+| - idRestaurante  |
+| - nome           |
+| - categoria      |
+| - telefone       |
++------------------+
+| +receberPedido() |
++------------------+
+          |
+          |1
+          |
+          |*
+     +---------+
+     | Produto |
+     +---------+
+
+Restaurante 1 -------- * Pedido
+
+
++------------------+
+|    Endereco      |
++------------------+
+| - idEndereco     |
+| - logradouro     |
+| - numero         |
+| - complemento    |
+| - bairro         |
+| - cidade         |
+| - cep            |
++------------------+
+
+Cliente 1 -------- * Endereco
+Pedido * -------- 1 Endereco
+
+
++------------------+
+|   Entregador     |
++------------------+
+| - idEntregador   |
+| - nome           |
+| - veiculo        |
+| - placa          |
++------------------+
+| +realizarEntrega()|
++------------------+
+
+Entregador 1 -------- * Pedido
